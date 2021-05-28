@@ -1,4 +1,4 @@
-public class Props {
+public class Application {
 
     public static void main(String[] args) {
         ApplicationConfig applicationConfig = new ApplicationConfig("application.properties");
