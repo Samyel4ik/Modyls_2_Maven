@@ -7,9 +7,9 @@ public class Application {
         for (String nameFile : applicationConfig.getFileNames()) {
 
             RenamableFile renamableFile = new RenamableFile(nameFile);
-            renamableFile.appendSuffix(suffix);
+            String newNameFile = renamableFile.appendSuffix(suffix);
 
-            System.out.println(String.format("%s->%s", nameFile, renamableFile.appendSuffix(suffix)));
+            System.out.println(String.format("%s->%s", nameFile, newNameFile));
         }
     }
 }
