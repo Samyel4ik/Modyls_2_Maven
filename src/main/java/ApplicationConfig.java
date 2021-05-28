@@ -1,6 +1,7 @@
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Properties;
 
@@ -27,14 +28,10 @@ public class ApplicationConfig {
     }
 
     public List<String> getFileNames() {
-        List<String> list = new ArrayList<>();
 
         String[] array = this.properties.getProperty("fileNames").split(",");
 
-        for (int i = 0; i < array.length; i++) {
-            list.add(array[i]);
-        }
-        return list;
+        return Arrays.asList(array);
     }
 
 }

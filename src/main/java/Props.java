@@ -1,5 +1,3 @@
-import java.util.List;
-
 public class Props {
 
     public static void main(String[] args) {
@@ -11,7 +9,7 @@ public class Props {
             RenamableFile renamableFile = new RenamableFile(nameFile);
             renamableFile.appendSuffix(suffix);
 
-            System.out.println(nameFile + "->" + renamableFile.appendSuffix(suffix));
+            System.out.println(String.format("%s->%s", nameFile, renamableFile.appendSuffix(suffix)));
         }
     }
 }
